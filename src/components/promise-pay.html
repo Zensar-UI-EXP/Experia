@@ -1,0 +1,155 @@
+
+            <div class="containerFlex marginTop20">
+                <div class="containerSide left" id="promiseProfile">
+                    ${require('./profile-details.html')}
+                    ${require('./collection-info.html')}
+                    ${require('./customer-preference.html')}
+                    ${require('./dca.html')}
+                </div>
+                <div class="containerMiddle">
+                    <main class="promisepay" id="profile__main">
+                        <nav class="promisepay__navtab">
+                            <ul class="promisepay__navtabcont">
+                                <li class="promisepay__navtablist">
+                                    <a onclick="switchTab('promiseAccountTab', 'promisepay--selectedtab', this)" class="promisepay__navtablink promisepay--navtablinkfirst" href="javascript:void(0);" title="Account button showing account details" aria-selected="false">Account</a>
+                                </li>
+                                <li class="promisepay__navtablist">
+                                    <a id="promiseActivity" onclick="switchTab('promiseActivityTab', 'promisepay--selectedtab', this)" class="promisepay__navtablink promisepay--navtablinklast promisepay--navtablinkactive" href="javascript:void(0);" title="Activity button showing activity details" aria-selected="true">Activity</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clear"></div>
+                        <div class="promisepay__innertab mar-tpbt--20" id="promiseAccountTab">
+                            <eds-card class="eds">
+                                <header>
+                                    <div>
+                                        <eds-dropdown class="eds">
+                                                <label for="containerMiddle__dropdown">Account summary Dropdown</label>
+                                                <select class="eds-dropdown-trigger style-scope eds-dropdown" tabindex="0" id="containerMiddle__dropdown" title="Dropdown - account summary selected"> 
+                                                    <option class="eds-dropdown-value style-scope eds-dropdown">Account Summary</option>
+                                                    <span class="eds-dropdown-placeholder style-scope eds-dropdown"></span>
+                                                    <span class="eds-dropdown-arrow style-scope eds-dropdown"></span>
+                                                </select>
+                                        </eds-dropdown>
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                </header>
+                                <main role="main" tabindex="0">
+                                    <div class="table middle evenHighlight" role="presentation">
+                                        <div class="row">
+                                            <div class="cell font-wt500">
+                                            </div>
+                                            <div class="cell font-wt500" role="heading" tabindex="0">
+                                                Date
+                                            </div>
+                                            <div class="cell font-wt500" role="heading" tabindex="0">
+                                                Code
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Last Letter
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                16/02/2018
+        
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                MR002
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Last Letter 1
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                10/03/2018
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                MR001
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Last Reg Ltr
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                21/03/2018
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                REG1
+                                            </div>
+                                        </div>
+                                        <div class="row marginBtm20">
+                                            <div class="cell" tabindex="0">
+                                                Returned Mail Flag
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                -
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                -
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Last SMS
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                20/03/2018
+        
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                OK
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Last Dialler Call
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                19/03/2018
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                RPC
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Last Dialler Call-1
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                12/03/2018
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                No answer
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="cell" tabindex="0">
+                                                Next Action
+                                            </div>
+                                            <div class="cell" tabindex="0">
+                                                n/a
+                                            </div>
+                                            <div class="cell">
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                </main>
+                            </eds-card>
+                            ${require('./remainder.html')}
+                        </div>
+                        <div class="promisepay__innertab mar-tpbt--20 promisepay--selectedtab" id="promiseActivityTab">
+                            ${require('./pay-activity.html')}
+                        </div>
+                    </main>
+                </div>
+                <div class="containerSide" id="promise__actsection">
+                    ${require('./activites.html')}
+                </div>
+            </div>
